@@ -9,6 +9,8 @@ public class Candy {
     public String getFlavor() {
         return flavor; }
 
-    // There may be instance variables, constructors, and methods that are not
-    // shown.
+    public String toString()
+    {
+        return flavor;
+    }
 }
