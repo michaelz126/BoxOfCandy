@@ -7,10 +7,10 @@ public class Main {
         box[3][1] = new Candy("lemon");
         box[3][2] = new Candy("grape");
         BoxOfCandy b = new BoxOfCandy(box);
-        //Test Cases
+        //Test Cases Part A
         System.out.println(b.moveCandyToFirstRow(0)); 
         System.out.println(b.moveCandyToFirstRow(2));
-        System.out.println(b);
+        //System.out.println(b);
 
         Candy[][] box2 = new Candy[3][5];
         box2[0][0] = new Candy("lime");
@@ -22,5 +22,11 @@ public class Main {
         box2[2][0] = new Candy("cherry");
         box2[2][2] = new Candy("lemon");
         box2[2][4] = new Candy("orange");
+        BoxOfCandy a = new BoxOfCandy(box2);
+        System.out.println(a);
+        System.out.println(a.removeNextByFlavor("cherry"));
+        System.out.println(a.removeNextByFlavor("lime"));
+        System.out.println(a.removeNextByFlavor("grape"));
+        System.out.println(a);
     }
 }
